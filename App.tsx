@@ -14,11 +14,11 @@ import {Text, TouchableOpacity, View} from 'react-native';
 import {DocumentView, RNPdftron, Config} from 'react-native-pdftron';
 const App = () => {
   useEffect(() => {
-    RNPdftron.initialize('Insert commercial license key here after purchase');
+    RNPdftron.initialize('NITROLABS LIMITED(luminPDF.com):OEM:LuminPDF::IA+:AMS(20220417):97B559530487480A73603E3AC992737860617F7ED708A57544D7C609FDB7F3F25629BEF5C7');
   }, []);
   const docRef = useRef();
   const path =
-    'https://pdftron.s3.amazonaws.com/downloads/pl/PDFTRON_mobile_about.pdf';
+    'https://file-examples-com.github.io/uploads/2017/10/file-sample_150kB.pdf';
 
   return (
     <View style={{paddingTop: 60, flex: 1}}>
@@ -30,9 +30,15 @@ const App = () => {
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
-          docRef.current.setToolMode(Config.Tools.annotationCreateFreeText);
+          docRef.current.setToolMode(Config.Tools.pan);
         }}>
         <Text>Freehand Text</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          docRef.current.findText('PDFTron', false, false, true, false);
+        }}>
+        <Text>Search Text</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => {
