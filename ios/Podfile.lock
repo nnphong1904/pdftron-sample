@@ -10,7 +10,7 @@ PODS:
     - React-jsi (= 0.64.1)
     - ReactCommon/turbomodule/core (= 0.64.1)
   - glog (0.3.5)
-  - PDFNet (9.0.1.77780)
+  - PDFNet (9.0.2.77876)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -377,9 +377,9 @@ SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: 7b423f9e248eae65987838148c36eec1dbfe0b53
-  FBReactNativeSpec: 825a92299f7d477e69cd649efb10e72d1b54c7d7
+  FBReactNativeSpec: 7078d7986a3c3ae4328a78b1002c460e929d351f
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
-  PDFNet: b9e7a7831af4020a4835e19ecf6abf9b81ce29a4
+  PDFNet: 08b51a3ffc056cb280fc1cf11318afa62ba7eea9
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: ec2ebc96b7bfba3ca5c32740f5a0c6a014a274d2
   RCTTypeSafety: 22567f31e67c3e088c7ac23ea46ab6d4779c0ea5
@@ -406,6 +406,6 @@ SPEC CHECKSUMS:
   RNPdftron: 7c60006dee67f2edd6d4a006f97cd0a63cd9538f
   Yoga: a7de31c64fe738607e7a3803e3f591a4b1df7393
 
-PODFILE CHECKSUM: 2071d1385a43f1a166a6c68f2139c87258462fce
+PODFILE CHECKSUM: 9800ddd5a00bb4d2d8046f231f19c9f6fff8a7e8
 
 COCOAPODS: 1.10.1

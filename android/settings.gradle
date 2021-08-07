@@ -1,3 +1,5 @@
 rootProject.name = 'MyApp'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':pdftron-react-native'
+project(':pdftron-react-native').projectDir = new File(rootProject.projectDir, '../submodules/pdftron-react-native/android')
 include ':app'
