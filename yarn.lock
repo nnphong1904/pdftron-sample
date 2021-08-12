@@ -5210,6 +5210,10 @@ react-native-codegen@^0.0.6:
     jscodeshift "^0.11.0"
     nullthrows "^1.1.1"
 
+"react-native-pdftron@github:PDFTron/pdftron-react-native#master":
+  version "2.0.3-beta.166"
+  resolved "https://codeload.github.com/PDFTron/pdftron-react-native/tar.gz/61c9e24e9a6783d3d1e0d4598f6e1d8b9c0ae3a3"
+
 react-native@0.64.1:
   version "0.64.1"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.64.1.tgz#cd38f5b47b085549686f34eb0c9dcd466f307635"

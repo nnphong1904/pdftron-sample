@@ -11,11 +11,7 @@
 import React, {useEffect, useRef} from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 
-import {
-  DocumentView,
-  RNPdftron,
-  Config,
-} from './submodules/pdftron-react-native';
+import {DocumentView, RNPdftron, Config} from 'react-native-pdftron';
 const App = () => {
   useEffect(() => {
     RNPdftron.initialize(
@@ -70,9 +66,19 @@ const App = () => {
         onDocumentLoaded={onDocumentLoaded}
         collabEnabled={true}
         currentUser={'Pdftron'}
+        overrideAnnotationMenuBehavior={[Config.AnnotationMenu.note]}
         ref={docRef}
         document={path}
         autoSaveEnabled={false}
+        onAnnotationMenuPress = {({annotationMenu, annotations}) => {
+          console.log('Annotation menu item', annotationMenu, 'has been pressed');
+          annotations.forEach(annotation => {
+            console.log('The id of selected annotation is', annotation.id);
+            console.log('The page number of selected annotation is', annotation.pageNumber);
+            console.log('The type of selected annotation is', annotation.type);
+            console.log('The lower left corner of selected annotation is', annotation.x1, annotation.y1);
+          });
+        }}
       />
     </View>
   );
