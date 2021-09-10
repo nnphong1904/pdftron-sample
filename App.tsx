@@ -66,6 +66,9 @@ const App = () => {
         onDocumentLoaded={onDocumentLoaded}
         collabEnabled={true}
         currentUser={'Pdftron'}
+        onExportAnnotationCommand={({ action, xfdfCommand })=>{
+          console.log('🚀 ~ file: App.tsx ~ line 70 ~ App ~ xfdfCommand', xfdfCommand)
+        }}
         overrideAnnotationMenuBehavior={[Config.AnnotationMenu.note]}
         ref={docRef}
         document={path}
