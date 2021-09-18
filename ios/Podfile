@@ -12,7 +12,7 @@ target 'MyApp' do
     :hermes_enabled => false
   )
 
-  pod 'PDFNet', podspec: 'https://www.pdftron.com/downloads/ios/cocoapods/pdfnet/latest.podspec'
+  pod 'PDFNet', podspec: 'https://nightly-pdftron.s3-us-west-2.amazonaws.com/stable/2021-09-10/9.1/cocoapods/xcframeworks/pdfnet/2021-09-10_stable_rev78541.podspec'
 
   target 'MyAppTests' do
     inherit! :complete
